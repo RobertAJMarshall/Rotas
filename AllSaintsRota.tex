@@ -2,10 +2,12 @@
 \usepackage{palatino}
 \usepackage{slashbox}
 \usepackage{hyperref}
+%\usepackage{pdflscape}
+%\usepackage[pdftex]{lscape}
+%\usepackage[landscape,pdftex]{geometry}
 \usepackage{rotating}
-\usepackage{lscape}
 \usepackage{multirow}
-\usepackage{graphicx}
+%\usepackage{graphicx}
 \usepackage{html}
 \setlength{\oddsidemargin}{-2cm}
 \setlength{\topmargin}{-2.5cm}
@@ -19,28 +21,29 @@
 \fi
 \hyphenpenalty=1000\exhyphenpenalty=1000\relax
 \sloppy%disable hyphenation
+%\pdfpagewidth=297 mm % A4
+%\pdfpageheight=210 mm
 \begin{document}
-\begingroup
-\ifpdf
-%\pdfpageattr{/Rotate 90}
-\begin{landscape}
+%\setlength{\pdfpageheight}{\paperheight}
+%\setlength{\pdfpagewidth}{\paperwidth}
+\ifx\pdfoutput\undefined
 \else
-\special{landscape}
+\pdfpagewidth=297 mm % A4
+\pdfpageheight=210 mm
 \fi
-\endgroup
 \thispagestyle{empty}
 \begin{center}
 %\caption{%{
 {\Large 
-All Saints' Rota Feb 2003 -- Mar 2003}%}
+All Saints' Rota Apr 2003 -- May 2003}%}
 \vspace{1em}
 %\linebreak
 %\rotatebox{90}{Advent}
 %\begin{sloppypar}
-{\small
+{ \small
 %% \begin{sidewaystable}[phbt]
-\begin{tabular}{|l|p{2cm}|p{1.4cm}|p{1.0cm}|p{0.8cm}|p{3.4cm}|p{2cm}|p{1.5cm}|p{2cm}|p{2cm}|p{1.9cm}
-|p{2cm}|p{1.8cm}|}\hline
+\begin{tabular}{|l|p{1.6cm}|p{1.4cm}|p{1.0cm}|p{0.8cm}|p{3.0cm}|p{2cm}|p{1.5cm}|p{2cm}|p{2cm}|p{1.9cm}
+|p{2cm}|p{1.6cm}|}\hline
 % heading
 %{\bf
 & Date & Service
@@ -49,55 +52,56 @@ Sidespersons & Welcome Team & Tea & Flowers & Cr\^{e}che \\ %}
 \hline\hline
 % week 1
 \begin{latexonly}
-\multirow{4}*{\rotatebox{90}{}} %\Large $\longleftarrow$ Advent $\longrightarrow$}} &
+\multirow{3}*{\rotatebox{90}{\Large $\longleftarrow$\hspace{0.5cm}Lent\hspace{0.5cm} $\longrightarrow$}} 
 \end{latexonly}
 &
 %A &
 %x &
-2 Feb  - Thanksgiving Sunday  & Morning Worship& Chris G  & TG & Malachi
-3.1-5  \linebreak Hebrews 2.14-end or
-\linebreak Luke 2.22-40
+6 Apr    & Holy Communion &  MO & JO & Jeremiah 31.31-34
+\linebreak Hebrews 5.5-10 or
+\linebreak John 12.20-33
 %\href{http://divinity.library.vanderbilt.edu/lectionary/BAdvent/bAdvent1.htm}
 %{\URL{RCL}}
 & 
-Jacqui Donaldson Geoff Gibson & Ian \linebreak Morison &
-Dot Graham Brian Robinson & Margaret Steel Graham McCabe & 
-E.Johnson   M.Pearson   D/R Graham
-&  S West &  Shirley Hotchkin \\ \hline %\cline{3-13}
-& 9 Feb & Holy \linebreak Communion & CCK & JB & 
-Isaiah 40.21-31  or\linebreak 1 Corinthians 9.16-23
- Mark 1.29-39 
-&Jim Magnall \linebreak Alison McKenzie & Robert Marshall &
-R \& H Barker & Vi Stevenson  M Smithers & 
+Hazel Barker David Black & Richard Fieldhouse &
+Tony Hallatt Maurice Hotchkin & Vi Stevenson Mike Smithers & 
 P \& E Ashley P/S Gaskell
- &  A Mason   & Laura Potts \\ \hline
+&  S Hill &  Geoff \& Joan \\ \hline %\cline{3-13}
+
+% & 9 Feb & Holy \linebreak Communion & CCK & JB & 
+% 
+% &Jim Magnall \linebreak Alison McKenzie & Robert Marshall &
+% R \& H Barker & Vi Stevenson  M Smithers & 
+% P \& E Ashley P/S Gaskell
+%  &  A Mason   & Laura Potts \\ \hline
 %\href{http://divinity.library.vanderbilt.edu/lectionary/BAdvent/bAdvent2.htm}
 %{\URL{RCL}}
-% week 3
-& 16 Feb & All Age Worship   & ChrisG  & JennyE  & 
-{\footnotesize (
-2 Kings 5.1-14 or
-\linebreak 1 Corinthians 9.24-27 
-%\href{http://divinity.library.vanderbilt.edu/lectionary/BAdvent/bAdvent3.htm}
-%{\URL{RCL}}
-\linebreak Mark 1.40-45 
-)} & 
-Brownies & Brownies &
-Norman Pearson Bob Williams & Anne Walton Sheila Williams & 
+% week 2
+& 13 Apr - Palm Sunday & Morning Worship   & LH  & RM  & 
+Mark 11.1-11 or John 12.12-16 & 
+Richard Fieldhouse Peggy Bloor & Shirley Hill &
+Dot Graham Brian Robinson & Anne Walton Sheila Williams & 
 J.Robinson \linebreak P Longden  B/C Gleaves
- &  Guides \& Brownies& McCabes \\ \hline %\cline{3-9}
-
-% week 4
-& 23 Feb & Holy Communion & Robert M & tba &
-Proverbs 8.1, 22-31 or 
-Colossians 1.15-20 
-\mbox{John 1.1-14}
-
-& Brian Gleaves Judy Morison  & Dot Phillips & Roger Graham Brian
-Gleaves & 
-Chris \& Brian Gleaves  & 
+ &  S Williams & Laura Potts  \\ 
+\cline{3-13}
+& 6:30pm &  &  &
+\multicolumn{9}{|c|}{\rule[-1mm]{0mm}{6mm}\Large $\longleftarrow$
+APCM (Team Parish AGM) $\longrightarrow$}    \\ 
+\hline %\cline{3-9}
+\multicolumn{13}{|c|}{\rule[-1mm]{0mm}{6mm} Maundy Thursday (8pm) All
+    Saints Good Friday (11am) St Michaels}
+    \\ 
+\hline
+% week 3
+\begin{latexonly}
+\multirow{8}*{\rotatebox{90}{\Large $\longleftarrow$\hspace{1.5cm}Easter\hspace{1.5cm} $\longrightarrow$}} 
+\end{latexonly}
+& 20 Apr - Easter & Family Communion &  CG & RS &
+tba %\mbox{John 1.1-14}
+& Linda Hallatt Trefor Hughes  & Dot Graham & Norman Pearson \linebreak Bob Williams & 
+ Phil Marsh Audrey Mason & 
 G/A Walton  \linebreak J Donaldson  \linebreak G Sly
-&  M Steel & Jacqui Donaldson \\
+&  Easter &  Liz Johnson \\
 \hline %\cline{3-8}
 % week 5
 %% & 29 Feb ($5^{th}$ Sunday)& Morning Worship
@@ -113,78 +117,75 @@ G/A Walton  \linebreak J Donaldson  \linebreak G Sly
 %% & Christmas Flowers & Joan \& \linebreak Geoff\\
 %% \hline
 % week 6
-& 2 Mar  & Morning Worship
+& 27 Apr  & Morning Worship
 %%& \multicolumn{10}{|c|}{\rule[-1mm]{0mm}{6mm}\Large $\longleftarrow$
 %%Team Covenant Service at St. Michael's $\longrightarrow$}    \\ 
- & MRW & JG & 
-2 Kings 2.1-12 
-\mbox{2 Corinthians 4.3-6} or
-Mark 9.2-9 
+ & CCK & TG? & 
+Acts 4.32-35
+\linebreak 1 John 1.1-2.2 \linebreak or %\mbox{2 Corinthians 4.3-6} or
+John 20.19-end
 
-& Ann Walton 
- Phil Marsh & Hazel Barker
-  & Linda McCabe Geoff Gibson & 
- Phil Marsh Audrey Mason &
- H.Axon  \linebreak H.Duffield   M.Pearson   V.Stevenson
- & A Walton & Chris \linebreak McKillop \\
+& Jim Magnall 
+ Audrey Mason & Mike Smithers
+  & Roger Graham Brian Gleaves & 
+Chris \& Brian Gleaves  &
+ H.Axon  \linebreak H.Duffield   C McKillop    V.Stevenson
+ & J Adams & Barbara \linebreak Lomas \\
 \hline
 % week 7
-\begin{latexonly}
-\multirow{8}*{\rotatebox{90}{\Large $\longleftarrow$\hspace{1.5cm}Lent\hspace{1.5cm} $\longrightarrow$}} 
-\end{latexonly}
 %y
-& 9 Mar & Holy Communion & LizH  & JB &  
-Genesis 9.8-17 or
-\mbox{1 Peter 3.18-22 }
-\mbox{Mark 1.9-15}
-  &  Sheila Williams Alison Wilson  & 
-Tony \linebreak Hallatt & Richard Fieldhouse  Pat Magnall & 
+& 4 May & All Age Worship & \multicolumn{2}{|c|}{ JE }  &  
+{\footnotesize (
+Acts 3.12-19  or
+1 John 3.1-7
+Luke 24.36b-48
+)}  &    & 
+ & Linda McCabe Geoff Gibson & 
 Muriel \& Norman Pearson &
-The Mc\-Kenzie--Kirks
-&  Pat Gaskell & Liz Johnson\\
+The Mc\-Kenzies The Barkers
+&  Guides \& Brownies & Shirley Hotchkin \\
 \hline
 % week 8
-& 16 Mar & Lent Service - Lunch?
-& \multicolumn{2}{|c|}{DotP/CCK/MRW  }  &    
-{\footnotesize (
-Genesis 17.1-7, 15-16 
-Romans 4.13-25 
-Mark 8.31-38 or
-)}
-& Chris McKillop \linebreak Liz Harrison & 
-Chris Gleaves & Graham McCabe \linebreak Geoff Findlow & 
+& 11 May & Holy Communion
+& CG & DW &    
+Acts 4.5-12 \linebreak
+1 John 3.16-24 \linebreak
+John 10.11-18
+& Alison McKenzie Chris McKillop  & 
+Audrey Mason & Pat Longden  Jim Magnall & 
 Geoff  Gibson \& Lilian Storey &
-J.Hughes \linebreak C.Fieldhouse \linebreak Gaskells
-&  Linda McCabe & Barbara \linebreak Lomas \\
+J.Hughes \linebreak C.Fieldhouse \linebreak M \& D Black
+&  E Johnson & McCabes\\
 \hline
 % week 9
-& 23 Mar & Morning Worship
-& Robert M & tba & 
-Exodus 20.1-17 \linebreak
-1 Corinthians 1.18-25 
-John 2.13-22 or Matthew 10.16-22
-    & Ian Morison Marian Timothy & Trefor Hughes
- &  P Marsh Jean Robinson & 
+& 18 May & Holy Communion
+& LH & TS & 
+Acts 8.26-40 \linebreak
+1 John 4.7-21 \linebreak
+John 15.1-8
+
+    & \multicolumn{2}{|c|}{ Good Companions}  
+ &  Graham McCabe \linebreak Geoff Findlow & 
 Barbara Smith Trefor Hughes&
 M.Steel P.Marsh \linebreak S\&M Hotchkin
-&  D Newton & Shirley Hotchkin \\
-\cline{3-13}
-& 6:30pm & tba & JB &
-\multicolumn{9}{|c|}{\rule[-1mm]{0mm}{6mm}\Large $\longleftarrow$
-Holy Communion and AGM $\longrightarrow$}    \\ 
+&  Good Companions &  Jacqui Donaldson \\
 \hline
-& 30 Mar & Mothering Sunday (5\textsuperscript{th})
-\linebreak All Age Worship & DotP & JennyE & 
-{\footnotesize (
-Numbers 21.4-9 
-Ephesians 2.1-10 
-John 3.14-21 
-)}
-    & tba & tba
- &  Geoff Walton Mark Ellery & 
-Margaret Steel Graham McCabe &
-M.Steel P.Marsh \linebreak S\&M Hotchkin
-&  Betty Lomas &  McCabes \\
+& 25 May & Morning Worship?  
+ &  CCK & tba & 
+
+Acts 10.44-48 \linebreak
+1 John 5.1-6 \linebreak
+John 15.9-17 \linebreak
+
+    &  Margaret Saxon \linebreak Mike Smithers & 
+Phil Marsh &  P Marsh \linebreak Jean Robinson & 
+Margaret Steel \linebreak Graham McCabe &
+E.Johnson   \linebreak J Morison  D/R Graham
+&  Rainbows \linebreak (Julia McCoy) &   Chris \linebreak McKillop\\
+\hline
+& 29 May  & \multicolumn{11}{|c|}{\rule[-1mm]{0mm}{6mm}
+  Ascension Day - Evening Service St Barnabas}
+    \\ 
 \hline
 %% Christmas Day & Holy Communion & Readings & Readers & Prayers & Sidespersons & Welcome &
 %% Tea & Flowers & Creche  \\ \hline
@@ -213,9 +214,10 @@ M.Steel P.Marsh \linebreak S\&M Hotchkin
 
 \begin{tabular}{|c|c|c|c|}\hline
 JB & John Briggs &  tba & to be arranged  \\ %JBu & John Buckley \\
-JG  & Jude Gibson & TG & Terry Gibson 
-%RS & Ron Sutton 
-  \\ \hline
+ MO & Margaret Owens & JO & John Owens\\
+ DW  & David Woodley & TG & Terry Gibson \\
+ RS & Ron Sutton & TS & Tony Sparham  \\
+   \hline
 \end{tabular}
 \end{center}
 \vspace{1em}
@@ -224,7 +226,7 @@ Readers/Pray-ers - if you swap, please let the service leader know.\\
 Cr\^{e}che linked with 'Climbers' - contact Margaret Marsh
 {\\ \footnotesize I'm hoping to update a master copy with changes as they
 happen and make it available - for those with internet access at
-\url{http://www.capuchin.co.uk/AllSaintsRotaFeb2003.html} 
+\url{http://www.capuchin.co.uk/AllSaintsRotaApril.html} 
 
 %% Corrections to \url{&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#98;&#101;&#114;&#116;&#64;&#99;&#97;&#112;&#117;&#99;&#104;&#105;&#110;&#46;&#99;&#111;&#46;&#117;&#107;}
 
@@ -236,16 +238,11 @@ The reading listings are available at
 \url{http://www.cofe.anglican.org/commonworship/lect/lectfront1.html}.
 Text of the readings can be found at
 \url{http://divinity.library.vanderbilt.edu/lectionary/} - we are in Year 2
-from Advent 2002 but the readings sometimes differ from the Anglican version!
-{\tiny  $Id: AllSaintsRota.tex,v 1.4 2003-03-02 15:00:20 robert Exp $    }
+ but the readings sometimes differ from the Anglican version!
 
 \end{htmlonly}
+{  \$Id: AllSaintsRota.tex,v 1.5 2003-03-15 14:13:22 robert Exp $  (2003/03/09)  }
 }
-\begingroup
-\ifpdf
-\end{landscape}
-\fi
-\endgroup
 \end{document}
 
 %%% Local Variables:
