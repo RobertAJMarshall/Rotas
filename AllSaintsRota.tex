@@ -3,6 +3,7 @@
 %\usepackage{draftcopy}
 \usepackage{slashbox}
 \usepackage{hyperref}
+\usepackage{array}
 %\usepackage{pdflscape}
 %\usepackage[pdftex]{lscape}
 %\usepackage[landscape,pdftex]{geometry}
@@ -26,6 +27,9 @@
 %\pdfpagewidth=297 mm % A4
 %\pdfpageheight=210 mm
 %\input{ps-draft}
+  \def\RCS$#1: #2 ${\expandafter\def\csname RCS#1\endcsname{#2}}
+  \RCS$Revision: 1.10 $ % or any RCS keyword
+  \RCS$Date: 2003-07-05 07:35:35 $
 \begin{document}
 %\setlength{\pdfpageheight}{\paperheight}
 %\setlength{\pdfpagewidth}{\paperwidth}
@@ -218,16 +222,20 @@ Text of the readings can be found at
 \url{http://divinity.library.vanderbilt.edu/lectionary/} - we are in Year 2
  but the readings sometimes differ from the Anglican version!
 
-{  \$Id: AllSaintsRota.tex,v 1.9 2003-05-25 14:42:15 robert Exp $  (2003/05/25)  }
+{\tiny  \$Id: AllSaintsRota.tex,v 1.10 2003-07-05 07:35:35 robert Exp $  (2003/05/25)  }
+  \date{Revision \RCSRevision, \RCSDate}
 }
-{  \$Id: AllSaintsRota.tex,v 1.9 2003-05-25 14:42:15 robert Exp $  (2003/05/25)  }
 
 \end{htmlonly}
+
+{  \$Id: AllSaintsRota.tex,v 1.10 2003-07-05 07:35:35 robert Exp $  (2003/05/25)  }
+
 \begingroup
 \ifpdf
 %\end{landscape}
 \fi
 \endgroup
+
 \end{document}
 
 %%% Local Variables:
