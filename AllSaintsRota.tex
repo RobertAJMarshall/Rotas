@@ -1,9 +1,12 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage{palatino}
-%\usepackage{draftcopy}
+\usepackage{draftcopy}
 \usepackage{slashbox}
 \usepackage{hyperref}
 \usepackage{array}
+\usepackage[pdftex]{graphicx}
+%declare extensions
+\DeclareGraphicsExtensions{.jpg}
 %\usepackage{pdflscape}
 %\usepackage[pdftex]{lscape}
 %\usepackage[landscape,pdftex]{geometry}
@@ -45,14 +48,18 @@
 \fi
 \endgroup
 \thispagestyle{empty}
+%\DeclareGraphicsExtensions{.gif}
 \begin{center}
 %\caption{%{
 {\Large 
 % Draft
-All Saints' Rota Oct -- Nov 2003}%}
+All Saints' Rota Dec 2003 -- Jan 2004}%}
+% \begin{figure}%[h]%t!]
+%     \includegraphics{Koch-69a}
+% \end{figure}
 \vspace{1em}
-%{\bf \Large \ldots for any final corrections - please check if dates are
-%  impossible for you!} 
+% {\bf \Large \ldots for any final corrections - please check if dates are
+%   impossible for you!} 
 %\linebreak
 %\rotatebox{90}{Advent}
 %\begin{sloppypar}
@@ -61,16 +68,17 @@ All Saints' Rota Oct -- Nov 2003}%}
 % the 'P' column type is a ragged-right paragraph.  Uses array.sty
 \newcolumntype{P}[1]{>{\raggedright}p{#1}}
 
-\begin{tabular}{|p{0.07\textwidth}| % Date
+\begin{tabular}{|c | % Season
+p{0.07\textwidth}| % Date
 p{0.05\textwidth}| % Service
-p{0.018\textwidth}| % Ldr
-p{0.018\textwidth}| %Spkr
+c| % Ldr
+c| %Spkr
 P{0.1\textwidth}| % Readings
 p{0.09\textwidth}| % readers
 p{0.07\textwidth}| % Prayers
 p{0.08\textwidth}| %Side
 P{0.07\textwidth}| %Welc
-P{0.09\textwidth}| % Tea
+P{0.08\textwidth}| % Tea
 p{0.065\textwidth}| %Flwrs
 p{0.06\textwidth}|}\hline %creche
 %\begin{tabular}{|p{1.5cm}|p{1.8cm}|p{0.5cm}|p{0.5cm}|p{2.6cm}|p{2cm}|p{1.5cm}|p{2.4cm}|p{2.0cm}|p{2.2cm}
@@ -78,112 +86,133 @@ p{0.06\textwidth}|}\hline %creche
 %|p{1.8cm}|p{1.6cm}|}\hline
 % heading
 %{\bf
-%& 
+& 
 Date/Theme & Service
 & Ldr & Spkr & Readings & Readers & Prayers &
 Sidespersons & Welcome Team & Tea & Flowers & Cr\^{e}che \\ %}
 \hline\hline
 % week 1
-%\begin{latexonly}
-%\multirow{1}*{\rotatebox{90}{\Large $\leftarrow$Easter$\rightarrow$}} 
-%\end{latexonly}
+\begin{latexonly}
+\multirow{3}*{\rotatebox{90}{\Large $\leftarrow$Advent - The Light of the World $\rightarrow$}} 
+\end{latexonly}
 %&
 %A &
 %x &
-5 October Harvest  &  Family Service & DP  & RD &   
- 
+& 7 December  Light and Life &  Morning Worship & CCK  & RD &   
+Genesis 1:1--5 1 John1:1--10 
 %\href{http://divinity.library.vanderbilt.edu/lectionary/BAdvent/bAdvent1.htm}
 %{\URL{RCL}}
 & 
- &  &
-Brian Robinson Geoff Gibson  & Pat \& Stephen Gaskell& 
- H.Axon  \linebreak C Fieldhouse \linebreak    The Mc\-Kenzies 
-& Harvest  &  Ann Walton  \\ \hline %\cline{3-13}
-%  week 2
- 12 October  `Face of an Angel' & Holy \linebreak Communion & CG  & RD & 
- Acts 6:8--15 Matthew 10:16--20
- & David Black Jacqui Donaldson & Hazel Barker &
- Maurice Hotchkin \linebreak Pat Magnall &  Mike Smithers Sheila Williams   & 
+Hazel Barker Richard Fieldhouse & Brian Gleaves &
+Tony Hallatt Lynne Doulton & Mike Smithers Sheila Williams & 
 D \& M Black  \linebreak J Morison P.Marsh 
-& A Ellery  &  Liz Johnson    \\ \hline
+& A Smithers  &  Shirley Hotchkin   \\ \hline %\cline{3-13}
+%  week 2
+& 14 December  Guiding Light & Holy \linebreak Communion & RD  & FH & 
+Psalm 23 \linebreak John 8:12-20
+ & Sally Barratt Brian Gleaves & Richard Fieldhouse &
+ Dot Graham \linebreak Pat Magnall &  Phil Marsh \& Lilian Storey   & 
+C McKillop    V.Stevenson\linebreak S\&M Hotchkin
+& H Preston  &  Liz Johnson    \\ \hline
 % \href{http://divinity.library.vanderbilt.edu/lectionary/BAdvent/bAdvent2.htm}
 % {\URL{RCL}}
 %  week 3
 % \begin{latexonly}
 % \multirow{10}*{\rotatebox{90}{\Large $\longleftarrow$\hspace{1.5cm}Trinity\hspace{1.5cm} $\longrightarrow$}} 
 % \end{latexonly}
-19 October   `What kind of house?' & Morning Worship   &  CG & RM  & 
-  Isaiah 42:5--9 \linebreak Acts 7:44--53
-& 
- Chris Campbell-Kelly \linebreak Phil Marsh  & Mike Smithers &
-Jim Magnall Mark Ellery & Phil Marsh \& Lilian Storey  & 
-C McKillop    V.Stevenson\linebreak S\&M Hotchkin
- & L Barlow   & Barbara \linebreak Lomas  \\ 
-\hline
 % week 3
-26 October  `Scattered'  & Holy Communion & CCK  & RD &
-Acts 7:54-8:4 Matthew 24:4-15
-& Chris Gleaves \linebreak Joy Kewney  &  Ian Morison & Richard Fieldhouse Geoff Findlow & 
-Chris \& \linebreak Brian Gleaves  &
+& 21 Dec    & Family Nativity   &  \multicolumn{2}{c|}{RD \&
+  \linebreak children}   & 
+
+& 
+   &  &
+Jim Magnall Brian Robinson  & Pat \& Stephen Gaskell  & 
 E.Johnson   M.Steel \linebreak  D/R Graham
-& J Clandillon  &  Shirley Hotchkin \\
+ & Christmas Flowers   & Barbara \linebreak Lomas  \\ 
 \hline %\cline{3-8}
-% week 5
-2 November All Saints' Sunday & Family Service %All Age Worship
+&     & Carol Service   & CCK & DP &
+\multicolumn{4}{c|}{} & \multicolumn{4}{c|}{}
+% & 
+%    &  &
+\\ 
+\cline{1-9}
+& 24 December    & Holy Communion & TBA  & RD &
+Hebrews 1:1--4 John 1:1--14
+&  Mike Smithers Pat Magnall &  Chris Gleaves & Geoff Walton Jim Magnall & 
+\multicolumn{4}{c|}{ \multirow{3}*{ 
+\includegraphics[height=2.0cm, bb=0 0 108 134]{Koch-69}
+} } \\
+\cline{1-9}
+& Christmas Day    & Family Communion & RD  & CG &
+
+& Sheila Williams Dot Phillips  &  Tony Hallatt & Richard Fieldhouse
+Brian Gleaves & 
+\multicolumn{4}{c|}{}
+\\
+%
+%&   &   \\
+\hline %\cline{3-8}
+% week 4
+& 28 December  Holy Innocents & Holy Communion %All Age Worship
  & RD & CG & 
-Revelation 21.1-6
+1 Samuel 2:18--20,26 \linebreak Luke 2:41-52
 &  
-  & 
-  & Geoff Walton \linebreak Bob Williams  & 
-Eustace \& Joy Kewney &
-J.Hughes \linebreak C.Fieldhouse \linebreak The Barkers
- & D Newton & Jacqui \linebreak Donaldson \\
+Linda Hallatt \linebreak Jim Magnall  & 
+Shirley Hill  & Mark Ellery \linebreak Bob Williams  & 
+Chris \& Brian Gleaves&
+P \& E Ashley \linebreak The Barkers
+ & Christmas Flowers & Jacqui \linebreak Donaldson \\
 \hline
-% week 6
+% week 5
 %y
-9 November Rememberance \linebreak Sunday & Morning Worship & DP  & RD & %\multicolumn{2}{|c|}{  }  &  
-Jonah 3.1-5, 10; Mark 1.14-20  &    Trefor Hughes \linebreak Ian Morison & 
-Dot Graham & Roger Graham Geoff Walton & 
-Barbara Smith \linebreak Trefor Hughes &
-P \& E Ashley B/C Gleaves
-& H Barker  & Chris McKillop \\
+ \multicolumn{13}{|c|}{\Large 2004}  %\cline{3-8}
+\\ \hline
+\begin{latexonly}
+\multirow{3}*{\rotatebox{90}{\Large $\leftarrow$Epiphany$\rightarrow$}} 
+\end{latexonly}
+& 4 January  & Family Service & RD  & TBA & %\multicolumn{2}{|c|}{  }  &  
+Matthew 2.1-12
+&  Carol Fieldhouse  & 
+Trefor Hughes & Roger Graham  Maurice Hotchkin  & 
+Eustace \& Joy Kewney &
+J.Hughes \linebreak C.Fieldhouse P/S Gaskell
+& Christmas Flowers  & Chris McKillop \\
 \hline
 % week 7
-16 November & Holy Communion
-& RD & VG & 
-Daniel 12.1-3; Hebrews 
-10.11-25 or Mark 13.1-8
-& Barbara Smith Alison Wilson & 
-Dot Phillips & \raggedright Phil Marsh \linebreak Geoff Walton & 
+& 11 January & Holy Communion
+& RD & CG & 
+Isaiah 4.1-7 or Acts 8.14-17; Luke 3,15-17, 21-22
+&  Chris McKillop  Judy Morison & 
+Chris Campbell-Kelly & \raggedright Phil Marsh \linebreak Geoff Walton & 
 Margaret Steel \linebreak Ann Walton &
-J.Robinson \linebreak Pat Bell \linebreak  P/S Gaskell
-& P Green  & Laura Potts \\
+J.Robinson \linebreak Pat Bell \linebreak  
+& P Magnall  & Laura Potts \\
 \hline
 % week 9
-23 November Christ the King & Morning Worship  
-& RM  & RD & 
-Daniel 7.9-10 \linebreak John 18.33-39    &  Dot Graham  Tony Hallatt &
-Robert Marshall & Pat Bell \linebreak Brian Gleaves  & 
+& 18 January  Building a Strong Parish Community& Morning Worship  
+& CCK  & RD & 
+1 Chronicles 29.10-19; \linebreak Ephesians 4.1-13
+&  Robert Marshall  Alison Wilson &
+Phil Marsh & Pat Bell \linebreak Brian Gleaves  & 
 Vi Stevenson L Doulton &
 G/A Walton  \linebreak J Donaldson  \linebreak G Sly
-& J Donaldson  &  Liz Johnson   \\
+& E Johnson  &  Ann Walton  \\
 \hline
-30 November Advent \linebreak Sunday & Holy Communion
- & RD  &  & 
-Advent readings / songs / contributions    &   & 
- &  Bob Williams \linebreak  Tony Hallatt & 
-Mike Smithers Sheila Williams   & 
+& 25 January Giving for the Future of the Church & Holy Communion
+ & RM  & RD & 
+2 Corinthians 8.1-9; John 15.1-17
+  & Gillian Sly \linebreak Ann Walton  & 
+Hazel Barker &  Bob Williams \linebreak  Dot Graham & 
+Barbara Smith \linebreak Trefor Hughes    & 
  H.Axon  \linebreak L Doulton \linebreak    C McKillop    V.Stevenson
-& A Thomas  &  Ann Walton \\
+& M Saxon  &  Shirley Hotchkin  \\
 \hline
-30 Nov  & Christingle
-& CG & RD &\multicolumn{3}{|c|}{ }& Geoff Walton Phil Marsh &  \multicolumn{4}{|c|}{ }  \\ \hline
 \end{tabular}
 %\end{sidewaystable}
 }
 %\end{sloppypar}
 
-\vspace{1em}
+%\vspace{1em}
 % \begin{tabular}{|c|c|c|c|}\hline
 % JD & John Delight 
 %  &  tba & to be arranged  \\ %\\ %JBu & John Buckley \\
@@ -193,7 +222,7 @@ Mike Smithers Sheila Williams   &
 %    \hline
 % \end{tabular}
 \end{center}
-\vspace{1em}
+%\vspace{1em}
 Please swap if you cannot do a date, see also list of names/tel nos.
 Readers/Pray-ers - if you swap, please let the service leader know.\\
 Cr\^{e}che linked with 'Climbers' - contact Margaret Marsh
@@ -202,7 +231,6 @@ happen and make it available - for those with internet access at
 \url{http://www.capuchin.co.uk/AllSaintsRota.html} 
 (Robert Marshall)
 %% Corrections to \url{&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#98;&#101;&#114;&#116;&#64;&#99;&#97;&#112;&#117;&#99;&#104;&#105;&#110;&#46;&#99;&#111;&#46;&#117;&#107;}
-
 \begin{htmlonly}
 For corrections you can email me on the link at the foot of
 \url{http://www.chezmarshall.freeserve.co.uk} (Robert Marshall)
@@ -210,18 +238,18 @@ For corrections you can email me on the link at the foot of
 The reading listings are available at
 \url{http://www.cofe.anglican.org/commonworship/lect/lectfront1.html}.
 Text of the readings can be found at
-\url{http://divinity.library.vanderbilt.edu/lectionary/} - we are in Year 2
+\url{http://divinity.library.vanderbilt.edu/lectionary/} - we are in Year 3
  but the readings sometimes differ from the Anglican version!
 
-{\tiny  \$Id: AllSaintsRota.tex,v 1.15 2003-11-09 14:54:50 robert Exp $  (2003/07/05)  }
+{\tiny  \$Id: AllSaintsRota.tex,v 1.16 2003-11-16 17:33:13 robert Exp $    }
   \date{Revision \RCSRevision, \RCSDate}
 }
 
 \end{htmlonly}
-  \RCS$Revision: 1.15 $ % or any RCS keyword
-  \RCS$Date: 2003-11-09 14:54:50 $
+  \RCS$Revision: 1.16 $ % or any RCS keyword
+  \RCS$Date: 2003-11-16 17:33:13 $
 
-%{  \$Id: AllSaintsRota.tex,v 1.15 2003-11-09 14:54:50 robert Exp $  (2003/05/25)  }
+%{  \$Id: AllSaintsRota.tex,v 1.16 2003-11-16 17:33:13 robert Exp $    }
 
 \begingroup
 \ifpdf
