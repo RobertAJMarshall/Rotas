@@ -1,10 +1,12 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage{palatino}
+%\usepackage{draftstamp}
 \usepackage{slashbox}
 \usepackage{hyperref}
 %\usepackage{pdflscape}
 %\usepackage[pdftex]{lscape}
 %\usepackage[landscape,pdftex]{geometry}
+\usepackage{lscape}
 \usepackage{rotating}
 \usepackage{multirow}
 %\usepackage{graphicx}
@@ -23,6 +25,7 @@
 \sloppy%disable hyphenation
 %\pdfpagewidth=297 mm % A4
 %\pdfpageheight=210 mm
+%\input{ps-draft}
 \begin{document}
 %\setlength{\pdfpageheight}{\paperheight}
 %\setlength{\pdfpagewidth}{\paperwidth}
@@ -31,6 +34,14 @@
 \pdfpagewidth=297 mm % A4
 \pdfpageheight=210 mm
 \fi
+\begingroup
+\ifpdf
+%\pdfpageattr{/Rotate 90}
+%\begin{landscape}
+\else
+\special{landscape}
+\fi
+\endgroup
 \thispagestyle{empty}
 \begin{center}
 %\caption{%{
@@ -64,7 +75,7 @@ Sidespersons & Welcome Team & Tea & Flowers & Cr\^{e}che \\ %}
 %{\URL{RCL}}
 & 
 Hazel Barker David Black & Richard Fieldhouse &
-Tony Hallatt Maurice Hotchkin & Vi Stevenson Mike Smithers & 
+Tony Hallatt Maurice Hotchkin & Vi Stevenson Ann Walton & 
 P \& E Ashley P/S Gaskell
 &  S Hill &  Geoff \& Joan \\ \hline %\cline{3-13}
 
@@ -80,7 +91,7 @@ P \& E Ashley P/S Gaskell
 & 13 Apr - Palm Sunday & Morning Worship   & LH  & RM  & 
 Mark 11.1-11 or John 12.12-16 & 
 Richard Fieldhouse Peggy Bloor & Shirley Hill &
-Dot Graham Brian Robinson & Anne Walton Sheila Williams & 
+Dot Graham Brian Robinson & Mike Smithers Sheila Williams & 
 J.Robinson \linebreak P Longden  B/C Gleaves
  &  S Williams & Laura Potts  \\ 
 \cline{3-13}
@@ -94,7 +105,7 @@ APCM (Team Parish AGM) $\longrightarrow$}    \\
 \hline
 % week 3
 \begin{latexonly}
-\multirow{8}*{\rotatebox{90}{\Large $\longleftarrow$\hspace{1.5cm}Easter\hspace{1.5cm} $\longrightarrow$}} 
+\multirow{10}*{\rotatebox{90}{\Large $\longleftarrow$\hspace{1.5cm}Easter\hspace{1.5cm} $\longrightarrow$}} 
 \end{latexonly}
 & 20 Apr - Easter & Family Communion &  CG & RS &
 tba %\mbox{John 1.1-14}
@@ -126,7 +137,7 @@ Acts 4.32-35
 John 20.19-end
 
 & Jim Magnall 
- Audrey Mason & Mike Smithers
+ Audrey Mason & Audrey Mason
   & Roger Graham Brian Gleaves & 
 Chris \& Brian Gleaves  &
  H.Axon  \linebreak H.Duffield   C McKillop    V.Stevenson
@@ -152,7 +163,7 @@ Acts 4.5-12 \linebreak
 1 John 3.16-24 \linebreak
 John 10.11-18
 & Alison McKenzie Chris McKillop  & 
-Audrey Mason & Pat Longden  Jim Magnall & 
+Mike Smithers & Pat Longden  Phil Marsh & 
 Geoff  Gibson \& Lilian Storey &
 J.Hughes \linebreak C.Fieldhouse \linebreak M \& D Black
 &  E Johnson & McCabes\\
@@ -178,7 +189,7 @@ Acts 10.44-48 \linebreak
 John 15.9-17 \linebreak
 
     &  Margaret Saxon \linebreak Mike Smithers & 
-Phil Marsh &  P Marsh \linebreak Jean Robinson & 
+Brian Gleaves &  Jim Magnall \linebreak Jean Robinson & 
 Margaret Steel \linebreak Graham McCabe &
 E.Johnson   \linebreak J Morison  D/R Graham
 &  Rainbows \linebreak (Julia McCoy) &   Chris \linebreak McKillop\\
@@ -212,10 +223,11 @@ E.Johnson   \linebreak J Morison  D/R Graham
 }
 %\end{sloppypar}
 
-\begin{tabular}{|c|c|c|c|}\hline
-JB & John Briggs &  tba & to be arranged  \\ %JBu & John Buckley \\
+\vspace{1em}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+JB & John Briggs &  tba & to be arranged  & %\\ %JBu & John Buckley \\
  MO & Margaret Owens & JO & John Owens\\
- DW  & David Woodley & TG & Terry Gibson \\
+ DW  & David Woodley & TG & Terry Gibson &%\\
  RS & Ron Sutton & TS & Tony Sparham  \\
    \hline
 \end{tabular}
@@ -227,7 +239,7 @@ Cr\^{e}che linked with 'Climbers' - contact Margaret Marsh
 {\\ \footnotesize I'm hoping to update a master copy with changes as they
 happen and make it available - for those with internet access at
 \url{http://www.capuchin.co.uk/AllSaintsRotaApril.html} 
-
+(Robert Marshall)
 %% Corrections to \url{&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#98;&#101;&#114;&#116;&#64;&#99;&#97;&#112;&#117;&#99;&#104;&#105;&#110;&#46;&#99;&#111;&#46;&#117;&#107;}
 
 \begin{htmlonly}
@@ -240,9 +252,15 @@ Text of the readings can be found at
 \url{http://divinity.library.vanderbilt.edu/lectionary/} - we are in Year 2
  but the readings sometimes differ from the Anglican version!
 
-\end{htmlonly}
-{  \$Id: AllSaintsRota.tex,v 1.5 2003-03-15 14:13:22 robert Exp $  (2003/03/09)  }
+{  \$Id: AllSaintsRota.tex,v 1.6 2003-03-22 20:50:06 robert Exp $  (2003/03/15)  }
 }
+
+\end{htmlonly}
+\begingroup
+\ifpdf
+%\end{landscape}
+\fi
+\endgroup
 \end{document}
 
 %%% Local Variables:
