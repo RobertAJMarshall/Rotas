@@ -22,6 +22,7 @@
 \usepackage[pdftex]{graphicx}
 \newcommand*{\vcenteredhbox}[1]{\begingroup
 \setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup}
+\usepackage[none]{hyphenat}
 %declare extensions
 \DeclareGraphicsExtensions{.jpg}
 %\DeclareGraphicsRule{.jpeg}{eps}{.jpeg.bb}{`jpeg2ps #1}%
@@ -71,7 +72,7 @@
 %Draft
 All Saints' Rota 
 %{\Huge Draft}
-January -- February 2014
+March -- April 2014
 }%}
 % \begin{figure}%[h]%t!]
 %     \includegraphics{Koch-69a}
@@ -87,7 +88,7 @@ January -- February 2014
 % the 'P' column type is a ragged-right paragraph.  Uses array.sty
 \newcolumntype{P}[1]{>{\raggedright}p{#1}}
 \newcolumntype{X}[1]{>{\raggedright\arraybackslash}p{#1}}
-
+\sloppy
 \begin{tabular}{|%c | % Season
 p{0.04\textwidth}| % Date
 p{0.06\textwidth}| % Service
@@ -111,26 +112,28 @@ p{0.05\textwidth}|}\hline %creche
  Date & Service & Leader & Spkr & Readings & Readers & Prayers &
 Sidespersons & Welcome Team & Tea &  Flowers & B'fast   \\ \hline % & Cr\^{e}che
 \hline
-\toprule
-5 Jan & Informal & DM & DM & \multicolumn{1}{c|}{Matthew 2:1--12} &   &   & Phil Marsh Chris C-K & Pete McKenzie & B \& V Bullock E~Johnson &   & Margaret \& Phil \\ \hline
-12 Jan & Holy Communion & DM & CG & Isaiah 42:1-9 Matthew 3:13-17& Alison Wilson Pat Magnall  & Dot Phillips & Geoff Walton Tony Hallatt & M Smithers & J Donaldson G~Sly  R Graham & E Johnson & Ann \& Geoff \\ \hline
-19 Jan & Informal & CCK & DM & Isaiah 49:1-7 (John 1:29-42) & Dot Phillips & Dot Graham & Pat Magnall Richard Fieldhouse & Sheila Williams & B \& C Gleaves C~Fieldhouse & A Mason & Robert \\ \hline
-26 Jan & Holy Communion & DM & EV & Isaiah 9:1-4 Matthew 4:12-23 & Joy Kewney  Tony Hallatt & Chris Gleaves & Jim Magnall Tony Hallatt & Peter \& Helen Tattersall & R Marshall A~Moore E Johnson  &   & Carol \& Richard \\ \hline
-2 Feb & Informal & DM & DM & Malachi 3:1-5 (Luke 2:22-40 ) &  &   & Brian Gleaves Maurice Hotchkin  & Jim Donaldson &  D Graham    P~\&~S~Gaskell   & S West & Pat \& Stephen \\ \hline
-9 Feb & Holy Communion & DP & DM & Isaiah 58:1-9a Matthew 5:13-20  & Carol Fieldhouse Chris Gleaves & Tony Hallatt & Geoff Walton Pat Magnall & Phil Marsh & B \& C Gleaves A~Walton & A Walton & Sue McF \\ \hline
-16 Feb & Informal & JK & RM &Deut 30:15-20 (Matthew 5:21-37)  & Ron Sherwin & Richard Fieldhouse & Brian Gleaves  Maurice Hotchkin & Ann Walton & P Marsh  A~\&~P~McKenzie  & Guides (P~Magnall) & Chris \& Brian \\ \hline
-23 Feb & Holy Communion & DM & DM & Genesis 1:1 - 2.3 Matthew 6:25-34 & Ann Walton Richard Fieldhouse & Phil Marsh & Phil Marsh Richard Fieldhouse & Pete McKenzie & B \& V Bullock C~Fieldhouse & J Donaldson & Alison \& Pete \\ \hline
-2 Mar & Informal & DM & DM & Exodus 24:12-18 (Matthew 17:1-9) &   &   & Chris C-K Jim~Magnall & Sheila Williams & A Moore G Sly R~Marshall  & P Gaskell & Maurice \& Shirley \\ \hline
-%% 1 Sep & Informal & DM & DM & Luke 14.1,7-14 &   &   & Chris C-K Jim~Magnall & Pete McKenzie & A Moore P~Marsh R Graham &   & Maurice \& Shirley \\ \hline
-%% 8 Sep & Holy Communion & DM & GT & Philemon 1-21 Luke 14.25-33 & Carol Fieldhouse Dot~Graham & Tony Hallatt & Tony Hallatt Pat Magnall & John Porter & A \& P McKenzie C Fieldhouse & K Porter & Mike \\ \hline
-%% 15 Sep & Informal & JK  & DM & Luke 15.1-10  & Linda Hallatt & Phil Marsh & Phil Marsh  Richard Fieldhouse & Jim Donaldson & E Johnson  R~Marshall A~Moore   & V Stephenson & Jacqui \\ \hline
-%% 22 Sep & Holy Communion & DP & EV & 1 Timothy 2.1-7 Luke 16.1-13  & Sue Ryder Alison Wilson & Mike Smithers & Brian Gleaves Maurice Hotchkin  & Peter\& Helen Tattersall &  D Graham P~\&~S~Gaskell   & H Adams & Chris C-K \\ \hline
-%% 29 Sep & 5th Sunday & Going visiting... &   & 1 Timothy 6.6-19 Luke 16.19-31  &  &   &  &  &  & P Magnall &    \\ \hline
-%% 6 Oct & Informal & DM & DM & Luke 17.5-10  &  &   & Geoff Walton Pat Magnall & Sheila Williams & B \& C Gleaves A~Walton & P Ashley & Sue  \\ \hline
-%% 13 Oct & Holy Communion/Harvest & CG/CCK &   & 2 Timothy 2.8-15 Luke 17.11-19  & Jim Magnall Tony Hallatt & Richard Fieldhouse & Jim Magnall Maurice Hotchkin & Mike Smithers  & J Donaldson  A~\&~P~McKenzie  & P Ashley & Ann \& Geoff \\ \hline
-%% 20 Oct & Informal & DM & TT & Luke 18.1-8  & Dot Phillips & Chris Gleaves & Phil Marsh Brian Gleaves & Phil Marsh & P \& S Gaskell L~Hallatt & A McKenzie & Chris \& Brian \\ \hline
-%% 27 Oct & Holy Communion & DM & RM & Romans 15.1-6 Luke 4.16-24  & Ron Sherwin Jacqui Donaldson & Chris C-K & Richard Fieldhouse Chris C-K & Audrey Mason & B \& V Bullock E~Johnson & J Donaldson & Pat \& Stephen \\ \hline
-%% 3 Nov & Informal & DM & DM & Luke 19.1-10 &  &  & Geoff Walton Tony Hallatt & Mike Smithers  & C Fieldhouse  P~Marsh R~Marshall &  & Robert \\ \hline
+2 Mar & Informal & DM & DM & \multicolumn{1}{c|}{Matthew 2:1-12} &   &   & Chris C-K Jim~Magnall & Sheila Williams & A Moore A~Walton G Sly & P Gaskell & Maurice \& Shirley \\ \hline
+5 Mar & Ash Wednesday &  &  &  &  &  &  &  &  &   &  \\ \hline
+9 Mar & Holy Communion & DM & DM & Luke 4:1-13 Romans 10:8-13 & Alison McKenzie Gillian Sly & Carol Fieldhouse & Geoff Walton Brian Gleaves & Pete McKenzie & B \& C Gleaves E~Johnson & L Hallatt & Chris C-K \\ \hline
+16 Mar & Morning Worship & CCK & DM & Luke 9.10-17 & Sue Ryder & Chris Gleaves & Pat Magnall Tony Hallatt & Peter \& Helen Tattersall & J Donaldson  & S Williams & Jacqui \\ \hline
+23 Mar & Holy Communion & JK & DM/REM & Luke 14.1-14 1~Peter 5.5-7 & Hazel Moulden Jacqui Donaldson & Dot Graham & Jim Magnall Richard Fieldhouse & Phil Marsh & R~\&~D~Graham C~Fieldhouse & P Gaskell & Mike \& Ann \\ \hline
+30 Mar & Informal - Mothering Sunday & DM & RM & Luke 14.15-24 & Chris C-K & Tony Hallatt & Maurice Hotchkin Phil~Marsh & Ann Walton & L Hallatt R~\&~D~Graham & - & Margaret \& Phil \\ \hline
+6 Apr & Informal & DM & DM & Luke 19.1-10 &  &  & Geoff Walton Pat Magnall & Jim Donaldson & B \& C Gleaves A~Walton & S Hill & Sue McF \\ \hline
+13 Apr - Palm Sunday & Holy Communion   & DM & CG & Luke 19.28-40 Philippians 2.5-11 & Phil Marsh  Chris Gleaves & Joy Kewney & Brian Gleaves  Maurice Hotchkin  & Sheila Williams & P Marsh  A~\&~P~McKenzie  &  - & Ann \& Geoff \\ \hline
+17 Apr & Maunday Thursday &  & URC &  &  &  &  &  &  &  &  \\ \hline
+18 Apr & Good Friday &  & St Michael's &  &  &  &  &  &  &  &  \\ \hline
+20 Apr - Easter Day& Holy Communion  & DM & DM & Colossians 3:1-4 or Acts 10:34-43; John 20:1-18 & Jim Magnall Joy Kewney & Chris C-K & Phil Marsh Richard Fieldhouse & Pete McKenzie & P \& S Gaskell R~Marshall & K Porter & Chris \& Brian \\ \hline
+27 Apr & HC? & ? & ? & Acts 2.14a,22-32 John 20.19-31  & Robert Marshall & Shirley Hill & Geoff Walton  Tony Hallatt & Peter\& Helen Tattersall & B \& V Bullock C~Fieldhouse &   & Pat \& Stephen \\ \hline
+4 May & Informal &  &  & Luke 24.13-35 &  &  & Chris C-K Jim~Magnall & Jim Donaldson & J Donaldson   G~Sly E Johnson & J Donaldson &  \\ \hline
+%% 5 Jan & Informal & DM & DM & \multicolumn{1}{c|}{Matthew 2:1--12} &   &   & Phil Marsh Chris C-K & Pete McKenzie & B \& V Bullock E~Johnson &   & Margaret \& Phil \\ \hline
+%% 12 Jan & Holy Communion & DM & CG & Isaiah 42:1-9 Matthew 3:13-17& Alison Wilson Pat Magnall  & Dot Phillips & Geoff Walton Tony Hallatt & M Smithers & J Donaldson G~Sly  R Graham & E Johnson & Ann \& Geoff \\ \hline
+%% 19 Jan & Informal & CCK & DM & Isaiah 49:1-7 (John 1:29-42) & Dot Phillips & Dot Graham & Pat Magnall Richard Fieldhouse & Sheila Williams & B \& C Gleaves C~Fieldhouse & A Mason & Robert \\ \hline
+%% 26 Jan & Holy Communion & DM & EV & Isaiah 9:1-4 Matthew 4:12-23 & Joy Kewney  Tony Hallatt & Chris Gleaves & Jim Magnall Tony Hallatt & Peter \& Helen Tattersall & R Marshall A~Moore E Johnson  &   & Carol \& Richard \\ \hline
+%% 2 Feb & Informal & DM & DM & Malachi 3:1-5 (Luke 2:22-40 ) &  &   & Brian Gleaves Maurice Hotchkin  & Jim Donaldson &  D Graham    P~\&~S~Gaskell   & S West & Pat \& Stephen \\ \hline
+%% 9 Feb & Holy Communion & DP & DM & Isaiah 58:1-9a Matthew 5:13-20  & Carol Fieldhouse Chris Gleaves & Tony Hallatt & Geoff Walton Pat Magnall & Phil Marsh & B \& C Gleaves A~Walton & A Walton & Sue McF \\ \hline
+%% 16 Feb & Informal & JK & RM &Deut 30:15-20 (Matthew 5:21-37)  & Ron Sherwin & Richard Fieldhouse & Brian Gleaves  Maurice Hotchkin & Ann Walton & P Marsh  A~\&~P~McKenzie  & Guides (P~Magnall) & Chris \& Brian \\ \hline
+%% 23 Feb & Holy Communion & DM & DM & Genesis 1:1 - 2.3 Matthew 6:25-34 & Ann Walton Richard Fieldhouse & Phil Marsh & Phil Marsh Richard Fieldhouse & Pete McKenzie & B \& V Bullock C~Fieldhouse & J Donaldson & Alison \& Pete \\ \hline
+%% 2 Mar & Informal & DM & DM & Exodus 24:12-18 (Matthew 17:1-9) &   &   & Chris C-K Jim~Magnall & Sheila Williams & A Moore G Sly R~Marshall  & P Gaskell & Maurice \& Shirley \\ \hline
 \end{tabular}
 
 \label{tab:LABEL}
@@ -159,12 +162,13 @@ Sidespersons & Welcome Team & Tea &  Flowers & B'fast   \\ \hline % & Cr\^{e}che
 %   \hline
 %\end{tabular}
 %\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
-%% \begin{tabular}{|c|c|c|c|c|}\hline
-%% {\bf People: } & 
+\begin{tabular}{|c|c|c|c|c|}\hline
+{\bf People: } & 
 %AAWT & All-Age Worship Team & %DW & David Wightman &
 %% MT & Marion Tugwood \\
 %  GT & Graham Turner & RF & Richard Fieldhouse \\
 %TH & Theresa Hayton & &  \\% JS & John Staley & 
+REM & Ruth Mock \\
 %MS & Mike Strutt
 %RW & Rob Wardle & & \\% & MH &  &  & \\
 % VG & Vivien Gisby  & KR & Keith Ranger \\
@@ -188,8 +192,8 @@ Sidespersons & Welcome Team & Tea &  Flowers & B'fast   \\ \hline % & Cr\^{e}che
 % %  JM & John Mynett & MD & Mike Douglas \\
 % % %  DW  & David Woodley & TG & Terry Gibson &%\\
 % % %  RS & Ron Sutton & TS & Tony Sparham  \\
-  %%    \hline
-  %% \end{tabular}
+    \hline
+\end{tabular}
 \end{center}
 %\vspace{1em}
 \begin{minipage}{0.65\textwidth}
