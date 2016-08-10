@@ -4,6 +4,7 @@
 \usepackage{mathpazo}
 \usepackage[scaled=.95]{helvet}
 \usepackage{courier}
+\usepackage[l2tabu]{nag}
 %%
 % use this for draft!
 %\usepackage[dark,landscape,timestamp]{draftcopy}
@@ -32,7 +33,7 @@
 \setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup}
 \usepackage[none]{hyphenat}
 %declare extensions
-\DeclareGraphicsExtensions{.jpg}
+%\DeclareGraphicsExtensions{.jpg}
 %\DeclareGraphicsRule{.jpeg}{eps}{.jpeg.bb}{`jpeg2ps #1}%
 %\usepackage{pdflscape}
 %\usepackage[pdftex]{lscape}
@@ -79,11 +80,11 @@
 %\caption{%{
 {\Large 
 %Draft
-  \includegraphics[width=1cm, scale=0.10]{bells.jpeg}
+%  \includegraphics[width=1cm, scale=0.10]{bells.jpeg}
   AllSaints Rota 
 %{\Huge Draft}
-January -- February 2016
-  \includegraphics[width=1cm, scale=0.10]{bells.jpeg}
+March -- April 2016
+%  \includegraphics[width=1cm, scale=0.10]{bells.jpeg}
 }%}
 % \begin{figure}%[h]%t!]
 %     \includegraphics{Koch-69a}
@@ -106,13 +107,13 @@ p{0.04\textwidth}| % Date
 p{0.08\textwidth}| % Service
 c| % Ldr
 c| %Spkr
-X{0.09\textwidth}| % Readings
+X{0.11\textwidth}| % Readings
 X{0.07\textwidth}| % readers
 p{0.05\textwidth}| % Prayers
 X{0.08\textwidth}| %Side
 % X{0.07\textwidth}| %Welc
 X{0.09\textwidth}| % Tea
-p{0.08\textwidth}| %Flwrs
+p{0.06\textwidth}| %Flwrs
 p{0.05\textwidth}|}\hline %creche
 %\begin{tabular}{|p{1.5cm}|p{1.8cm}|p{0.5cm}|p{0.5cm}|p{2.6cm}|p{2cm}|p{1.5cm}|p{2.4cm}|p{2.0cm}|p{2.2cm}
 %\begin{tabular}{|p{1.6cm}|p{1.4cm}|p{0.6cm}|p{0.6cm}|p{2.8cm}|p{2cm}|p{1.5cm}|p{2.0cm}|p{2.0cm}|p{2.0cm}
@@ -125,31 +126,15 @@ p{0.05\textwidth}|}\hline %creche
 Sidespersons & %Welcome Team &
  Tea &  Flowers & B'fast   \\ \hline % & Cr\^{e}che
 \hline
-3 Jan & 1st Sunday & \multicolumn{2}{c|}{DM} &   &  &  & Jim Donaldson Chris C-K & J Donaldson R~Marshall  E~Johnson P~Marsh &  & Robert \\ \hline
-10 Jan & Holy Communion & DM & CG & Acts 8:14-17 Luke~3:15-17,21,22 & Jacqui Donaldson Alison Wilson & Dot Phillips & Phil Marsh Brian Gleaves & C Fieldhouse G~Sly A Walton & Liz Johnson & Carol \& Richard \\ \hline
-17 Jan & Morning Worship & CF & RM & John 2:1-11 & Sue Ryder & Phil Marsh & Geoff Walton Chris C-K & B \& C Gleaves P~Marsh & Audrey Mason & Sue McFahn \\ \hline
-24 Jan & Holy Communion & \multicolumn{2}{c|}{DM} & 1 Corinthians 12:12-31a Luke~4:14-21 & Chris C-K Phil Marsh & Robert Marshall & Peter \& Helen Tattersall  & A \& P McKenzie J Donaldson &  & Chris \& Brian \\ \hline
-31 Jan & 5th Sunday & CCK & A C-P & Luke 2:22-40 & Chris Gleaves & Mike Smithers & Jim Magnall Tony Hallatt & B \& V Bullock R~Marshall &  & Ann \& Geoff \\ \hline
-7 Feb & 1st Sunday & \multicolumn{2}{c|}{DM} &  &  &  & Jim Donaldson   Brian Gleaves & D \& R Graham L~Hallatt Ann~Walton & Ann Walton & Jacqui \\ \hline
-10 Feb & Ash Wednesday &  \multicolumn{9}{c|}{} \\ \hline
-14 Feb & Holy Communion & \multicolumn{2}{c|}{DM} & Romans 10:8b-13 Luke 4:1-13  & Carol Fieldhouse Dot Graham & Tony Hallatt &  Richard Fieldhouse Tony Hallatt & G Sly   A~\&~P~McKenzie   &  & Chris C-K \\ \hline
-21 Feb & Morning Worship & JK & CG & Luke 13:31-35 & Dot Phillips & Chris C-K & Geoff Walton Pete McKenzie & P \& S Gaskell C~Fieldhouse  & Guides (Pat Magnall) & Alison \& Pete \\ \hline
-28 Feb & Holy Communion & \multicolumn{2}{c|}{BL} & 1 Corinthians 10:1-13 Luke~13:1-9  & Sue McFahn Linda Hallatt  & Joy Kewney & Peter \& Helen Tattersall  & D \& R Graham E~Johnson & Jacqui Donaldson & Mike \\ \hline
-6 Mar & 1st Sunday Mothering Sunday& \multicolumn{2}{c|}{DM} &  &  &  & Jim Donaldson   Richard Fieldhouse & L Hallatt B~\&~C~Gleaves R~Marshall & Linda Hallatt & Carol \& Richard \\ \hline
-%% 2 Nov & Informal & DM & DM &   &   &  & Mike Smithers Richard Fieldhouse & P \& S Gaskell R~Marshall & V Stevenson & Jacqui \\ \hline
-%% 9 Nov & Holy Communion & CG & DM & 1 Thess 4:13--18 Matthew 25:1--13 & Chris C-K Richard Fieldhouse &  Brian Gleaves & Phil Marsh  Chris C-K &   B \& C~Gleaves  G~Sly & R Barker (P~Ashley) & Chris C-K \\ \hline
-%% 16 Nov & Morning Worship & JK & EV &  Matthew 25:14--30 & Jim Magnall & Dot Graham & Pat Magnall Brian Gleaves & E Johnson  A~Walton P~Marsh & P Ashley & Margaret \& Phil \\ \hline
-%% 23 Nov & Holy Communion & DM & ACP & Ephesians 1:15--23 
-%% Matthew 25:31--46 & Gillian Sly Mike Smithers & Joy Kewney & Jim Magnall Geoff Walton & J Donaldson  A~\&~P~McKenzie  &   & Mike \\ \hline
-%% 30 Nov & 5th & CCK & CG & Mark 13:24--37 &  Alison Mckenzie & Carol Fieldhouse & Phil Marsh Jim~Donaldson & B \& V Bullock E~Johnson &   & Chris \& Brian \\ \hline
-%% 7 Dec & Informal & DM & DM &   &   &   &  Phil Marsh Jim~Magnall & D \& R Graham C~Fieldhouse & P Gaskell & Carol \& Richard \\ \hline
-%% 14 Dec & HC & DM & DM & 1 Thess 5:16--24 John 1:6--8,19--28 &  Sue Ryder Carol Fieldhouse &  Shirley Hill & Helen \&  Peter Tattersall &  B \& V Bullock P~Marsh & Christmas Flowers & Ann \& Geoff \\ \hline
-%% 21 Dec & Christmas Service & DM & DM & \textit{ } &   &   & Chris C-K Ann~Walton & P \& S Gaskell R~Marshall &   & Sue \\ \hline
-%% 24 Dec & Christmas Eve & DM & DM & Hebrews 1:1--4[5--12]
-%% John 1:1--14 & Carol Fieldhouse, Chris C-K & Dot Phillips & Richard Fieldhouse Brian Gleaves(?) & \multicolumn{3}{c|}{\multirow{3}*{\includegraphics[width=4cm, scale=0.10]{img_Joseph's_story}}} \\ \cline{1-8} %&  &  &  &  \\ \hline
-%% 25 Dec & Christmas Day & DM & DM & Titus 2:11--14 & Tony Hallatt PeterTattersall & Helen Tattersall & Tony Hallatt  Peter Tattersall &  \multicolumn{3}{c|}{}  \\ \cline{1-8}
-%% 28 Dec & Team &  &   & Luke 2:1--14   &  &  & &  \multicolumn{3}{c|}{}  \\ \cline{1-8}
-%% 4 Jan & Informal & DM & DM &   &  & Mike Smithers & Tony Hallatt Pete McKenzie &  B \& C Gleaves J~Donaldson &  & Robert \\ \hline
+6 Mar & 1st Sunday & \multicolumn{2}{c|}{DM} &   &  &  & Jim Donaldson   Richard Fieldhouse & L Hallatt R~Marshall J~Donaldson A~Walton & Linda Hallatt & Carol \& Richard \\ \hline
+13 Mar & Holy Communion & DM & A C-P & Philippians 3:4b--14 John 12:1--8 & Ron Sherwin Mike Smithers & Shirley Hill & Peter \& Helen Tattersall &   B \& C Gleaves  G~Sly &   & Chris \& Brian \\ \hline
+20 Mar & Morning Worship & DP & RM & Luke 19:28--40 & Ann Walton & Phil Marsh & Geoff Walton Jim Magnall &  A \& P McKenzie P Marsh &   & Robert \\ \hline
+27 Mar & Easter Holy Communion & DM & DM & 1 Cor. 15:19--26 or Acts 10:34--43 John 20:1--18 or Luke 24:1--12  & Gillian Sly Alison McKenzie & Dot Phillips & Chris C-K Brian Gleaves  & P~\&~S~Gaskell E~Johnson & Pat Gaskell & Sue McFahn \\ \hline
+3 Apr & Informal & CCK & CG & John 20:19--31 & Robert Marshall & Dot Graham & Jim Donaldson Pete McKenzie & B \& C Gleaves D~\&~R Graham   & Shirley Hill & Margaret \& Phil \\ \hline
+10 Apr & Holy Communion & DM & DM & Revelation 5:11--14 John 21:1--19  & Brian Gleaves Richard Fieldhouse & Chris Gleaves & Chris C-K   Phil Marsh &   B \& V Bullock C~Fieldhouse  &   & Ann \& Geoff \\ \hline
+17 Apr & Morning Worship & DM & DM & John 10:22--30  & Phil Marsh & Carol Fieldhouse & Richard Fieldhouse Tony Hallatt &  A \& P McKenzie R Marshall  &  & Pat \& Stephen \\ \hline
+24 Apr & Holy Communion & DM & RM & Luke 13:31--35 &  Joy Kewney Tony Hallatt & Brian Gleaves & Geoff Walton Tony Hallatt & P \& S Gaskell G~Sly & Pat Gaskell & Chris C-K \\ \hline
+1 May & 1st Sunday & \multicolumn{2}{c|}{DM} & Revelation 21:1--6 John 13:31--35 &   &  & Peter \& Helen Tattersall  & J Donaldson R~Marshall  E~Johnson P Marsh &   & Jacqui \\ \hline
 \end{tabular}
 
 \label{tab:LABEL}
@@ -178,7 +163,7 @@ Sidespersons & %Welcome Team &
 %%   \hline
 %% \end{tabular}
 %\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
-%\begin{comment}
+\begin{comment}
 \begin{tabular}{|c|c|}\hline %|c|c|c|}\hline
 {\bf People: } & \\
 %AAWT & All-Age Worship Team & %DW & David Wightman &
@@ -217,7 +202,7 @@ BL & Barry Langman \\
 % % %  RS & Ron Sutton & TS & Tony Sparham  \\
      \hline
 \end{tabular}
-%\end{comment}
+\end{comment}
 \end{center}
 %\vspace{1em}
 \begin{minipage}{0.65\textwidth}
@@ -232,9 +217,9 @@ Please swap if you cannot do a date, see also list of names/tel nos.
 Readers/Pray-ers -- if you swap, please let the service leader know.\\
 I aim to update the master copy with changes as they
 happen and make it available -- for those with internet access
-\linebreak -- at
-%\url{http://www.capuchin.co.uk/AllSaintsRota.html} 
-\url{http://brock-marshall.no-ip.info/~robert/AS-rotas}
+ -- at
+\url{http://www.capuchin.co.uk/AS-rotas.html} 
+%\url{http://brock-marshall.no-ip.info/~robert/AS-rotas}
 (Robert Marshall 262151)}
 \end{minipage}
 \hspace{1.5em}
