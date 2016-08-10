@@ -9,6 +9,7 @@
 %\usepackage[dark,landscape,timestamp]{draftcopy}
 %\usepackage{pdfdraftcopy}
 \usepackage{verbatim}
+\usepackage{hyphenat}
 %\usepackage{changebar}
 %\usepackage[final]{pdfcomment}
 %\usepackage{pdfcomment}
@@ -22,7 +23,7 @@
 % not this \usepackage[final]{draftcopy}
 %\usepackage{slashbox}
 %\usepackage{xypic}
-%\usepackage{hyperref}
+\usepackage{hyperref}
 \usepackage{array}
 \usepackage[pdftex]{graphicx}
 \usepackage{tabularx}
@@ -42,6 +43,7 @@
 %\usepackage{graphicx}
 %\usepackage{html}
 \usepackage{ifpdf}
+%\usepackage{url}
 \DeclareMathAlphabet{\mathscr}{OT1}{pzc}%
                                  {m}{it}
 \setlength{\oddsidemargin}{-1cm}
@@ -79,12 +81,13 @@
 %Draft
 AllSaints Rota 
 %{\Huge Draft}
-September -- October 2015
+November -- December 2015
 }%}
 % \begin{figure}%[h]%t!]
 %     \includegraphics{Koch-69a}
 % \end{figure}
-%\linebreak\vspace{1em}
+\vspace{0.5em}
+
 % {\bf \Large \ldots for any final corrections - please check if dates are
 %   impossible for you!} 
 %\linebreak
@@ -98,16 +101,16 @@ September -- October 2015
 \sloppy
 \begin{tabular}{|%c | % Season
 p{0.04\textwidth}| % Date
-p{0.07\textwidth}| % Service
+p{0.08\textwidth}| % Service
 c| % Ldr
 c| %Spkr
-X{0.11\textwidth}| % Readings
-X{0.08\textwidth}| % readers
+X{0.09\textwidth}| % Readings
+X{0.07\textwidth}| % readers
 p{0.05\textwidth}| % Prayers
 X{0.08\textwidth}| %Side
 % X{0.07\textwidth}| %Welc
 X{0.09\textwidth}| % Tea
-p{0.05\textwidth}| %Flwrs
+p{0.08\textwidth}| %Flwrs
 p{0.05\textwidth}|}\hline %creche
 %\begin{tabular}{|p{1.5cm}|p{1.8cm}|p{0.5cm}|p{0.5cm}|p{2.6cm}|p{2cm}|p{1.5cm}|p{2.4cm}|p{2.0cm}|p{2.2cm}
 %\begin{tabular}{|p{1.6cm}|p{1.4cm}|p{0.6cm}|p{0.6cm}|p{2.8cm}|p{2cm}|p{1.5cm}|p{2.0cm}|p{2.0cm}|p{2.0cm}
@@ -120,21 +123,18 @@ p{0.05\textwidth}|}\hline %creche
 Sidespersons & %Welcome Team &
  Tea &  Flowers & B'fast   \\ \hline % & Cr\^{e}che
 \hline
-6 Sep & 1st Sunday &  & \multicolumn{1}{c|}{AC-P} & James 1.17-27 Mark 7.1-8,14,15,21-23 & Alison McKenzie & Dot Phillips & Jim Donaldson Pete McKenzie & P \& S Gaskell C~Fieldhouse & - & Alison \& Pete \\ \hline
-13 Sep & Holy Communion & DW & DW & James 3.1-12 Mark 8.27-38  & Chris C-K, Joy~Kewney & Chris Gleaves & Phil Marsh Brian Gleaves & J Donaldson G~Sly A Walton & Vi Stevenson & Jacqui \\ \hline
-20 Sep & Morning Worship & DM & DM & Mark 9.30-37  & Phil Marsh & Chris C-K & Peter \& Helen Tattersall  & B \& V Bullock R~Marshall & Helen Adams & Margaret \& Phil \\ \hline
-27 Sep & Holy Communion & DM & DM & James 5.13-20  Mark 9.38-50 & Dot Phillips Linda Hallatt & Dot Graham & Jim Magnall Tony Hallatt & P \& S Gaskell E~Johnson & Pat Magnall & Mike \\ \hline
-4 Oct & 1st Sunday & DM & DM & [Mark 10.2-16 ] &  &  & Pete McKenzie Phil Marsh & D \& R Graham  L~Hallatt & Pauline Ashley (Harvest) & Pat \& Stephen \\ \hline
-11 Oct & Holy Communion & JK & DM & Hebrews 4:12-16 Mark 10:17-31 & Jim Magnall Alison Wilson  & Phil Marsh & Geoff Walton Chris C-K & B \& V Bullock G~Sly & Pauline Ashley & Ann \& Geoff \\ \hline
-18 Oct & Morning Worship &  &  &  Mark 10:35-45  & Richard Fieldhouse  & Mike Smithers & Jim Donaldson  Richard Fieldhouse  & A \& P McKenzie C Fieldhouse &   & Carol \& Richard \\ \hline
-25 Oct & Holy Communion & BL & BL & Hebrews 7:23-28    Mark 10:46-52 & Jacqui Donaldson Robert Marshall & Tony Hallatt & Geoff Walton Brian Gleaves & J Donaldson R~Marshall E~Johnson & Jacqui Donaldson & Sue \\ \hline
-1 Nov & 1st Sunday & DM & DM & John 11:32-44 &  &  & Peter \& Helen Tattersall  & B \& C Gleaves P~Marsh & Alison McKenzie & Chris \& Brian \\ \hline
-\end{tabular}
-\label{}
-\end{table}
-\end{tabular}
-\label{}
-\end{table}
+1 Nov & 1st Sunday & DM & \multicolumn{1}{c|}{DM} &   &  &  & Peter \& Helen Tattersall  & B \& C Gleaves P~Marsh A~Walton & Alison McKenzie & Chris \& Brian \\ \hline
+8 Nov & Holy Communion Remembrance& DM & DM & Hebrews 9:24--28 Mark 1:14-20 &  Tony Hallatt Mike Smithers & Brian Gleaves & Phil Marsh Brian Gleaves & A \& P McKenzie C Fieldhouse & Pauline Ashley & Geoff \& Ann \\ \hline
+15 Nov & \nohyphens{Morning Worship} & A C-P & A C-P & Mark 13:1--8  & Ron Sherwin & Shirley Hill & Geoff Walton Chris C-K & J Donaldson G~Sly A Walton &   & Alison \& Pete \\ \hline
+22 Nov & \nohyphens{Holy Communion} & BL & BL & Revelation 1:4b-8 John 18:33--37  & Pat Magnall Ann Walton & Carol Fieldhouse & Jim Magnall Tony Hallatt & D \& R Graham L~Hallatt &  & Chris \\ \hline
+29 Nov & 5th Sunday \nohyphens{Advent} & \multicolumn{2}{c|}{DP/CC-K }   & \multicolumn{1}{c|}{} &  & Robert Marshall & Peter \& Helen Tattersall  & B \& V Bullock R~Marshall & Pat Gaskell /  Pauline Ashley & Jacqui \\ \hline
+6 Dec & 1st Sunday & DM & DM &  &  &  & Phil Marsh  Richard Fieldhouse  & A \& P McKenzie  P \& S Gaskell & Pat Gaskell & Margaret \& Phil \\ \hline
+13 Dec & \nohyphens{Holy Communion} & DM & RM & Philippians 4:4-7 Luke 3:7-18  & Gillian Sly Alison McKenzie & Richard Fieldhouse & Pete McKenzie Brian Gleaves & G Sly  C~Fieldhouse E~Johnson & Christmas Flowers & Mike \\ \hline
+20 Dec & \nohyphens{Christmas Service} & DM &  &  &  &  & Geoff Walton Jim Donaldson & D \& R Graham P~Marsh  &  & Pat \& Stephen \\ \hline
+24 Dec & Christmas Eve time - tbc & DM &  & Titus 3:4-7 Luke~2:8--20  & Brian Gleaves Robert Marshall & Dot Graham & Tony Hallatt Jim Donaldson &  \multicolumn{3}{c|}{\multirow{3}*{\includegraphics[width=4cm, scale=0.10]{img_Joseph's_story}}}   \\ \cline{1-8} %&  &  \\ \hline
+25 Dec & Christmas Service &   \multicolumn{2}{c|}{ 10am @ St Barnabas} &   &  &  &  &  \multicolumn{3}{c|}{}  \\ \cline{1-8}%&  &   \\ \hline
+27 Dec & Team Service &   \multicolumn{2}{c|}{10:30 @ St Michaels } & Col~3:12-17 Luke~2:41-52  &  &  &  &  \multicolumn{3}{c|}{}  \\ \hline %\cline{1-8}%&  &   \\ \hline
+3 Jan & 1st Sunday &   &  &  &  &  & Jim Donaldson Chris C-K & J Donaldson R~Marshall  E~Johnson L~Hallatt &  & Robert \\ \hline
 %% 2 Nov & Informal & DM & DM &   &   &  & Mike Smithers Richard Fieldhouse & P \& S Gaskell R~Marshall & V Stevenson & Jacqui \\ \hline
 %% 9 Nov & Holy Communion & CG & DM & 1 Thess 4:13--18 Matthew 25:1--13 & Chris C-K Richard Fieldhouse &  Brian Gleaves & Phil Marsh  Chris C-K &   B \& C~Gleaves  G~Sly & R Barker (P~Ashley) & Chris C-K \\ \hline
 %% 16 Nov & Morning Worship & JK & EV &  Matthew 25:14--30 & Jim Magnall & Dot Graham & Pat Magnall Brian Gleaves & E Johnson  A~Walton P~Marsh & P Ashley & Margaret \& Phil \\ \hline
@@ -177,13 +177,13 @@ Sidespersons & %Welcome Team &
 %%   \hline
 %% \end{tabular}
 %\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
-\begin{comment}
+%\begin{comment}
 \begin{tabular}{|c|c|}\hline %|c|c|c|}\hline
 {\bf People: } & \\
 %AAWT & All-Age Worship Team & %DW & David Wightman &
 %% MT & Marion Tugwood \\
-GVT & Gerri Tetzlaff \\
-LS & Lynne Spedding \\
+%GVT & Gerri Tetzlaff \\
+%LS & Lynne Spedding \\
 BL & Barry Langman \\
 %  GT & Graham Turner & RF & Richard Fieldhouse \\
 %TH & Theresa Hayton & &  \\% JS & John Staley & 
@@ -216,7 +216,7 @@ BL & Barry Langman \\
 % % %  RS & Ron Sutton & TS & Tony Sparham  \\
      \hline
 \end{tabular}
-\end{comment}
+%\end{comment}
 \end{center}
 %\vspace{1em}
 \begin{minipage}{0.65\textwidth}
